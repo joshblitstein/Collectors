@@ -1,0 +1,48 @@
+.nav{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20%;
+    z-index: 4;
+    width: 10%;
+    height: 10%;
+    opacity: 0.5;
+    transition: all 0.5s;
+    &:hover{
+        opacity: 1;
+        width: 13%;
+        height: 13%;
+    }
+}
+.paginate{
+    position: absolute;
+
+    list-style: none;
+    float: right;
+    display: flex;
+    margin: 10px 10px 10px;
+}
+
+.page-link{
+    cursor: pointer;
+    margin: 4px;
+    border: 1px black solid; 
+    font-size: 16px;
+}
+
+.pageItem{
+    float: right;
+}
+
+a.page-link{
+    color: #000;
+    font-size: 100%;
+}
+
+li.page-item.active .page-link{
+
+        opacity: 1;
+       
+    
+}

@@ -1,0 +1,95 @@
+.list-group-item {
+    margin: 3px 3px 3px 3px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+    opacity: 0.7;
+    transition: all 0.5s;
+    height: 100%;
+    width: 100%;
+    background-color: #0d6efd;
+   
+    &:hover{
+        opacity: 1;
+        height: 110%;
+        width: 110%;
+    }
+
+
+}
+
+ul.d-flex{
+    pointer-events: none;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    transition: all 1s ease;
+  
+ 
+}
+
+li{
+    pointer-events: all;
+    transition: 1s all ease;
+   
+}
+li.list-group-item.active{
+    opacity: 1;
+    height: 110%;
+    width: 110%;
+    
+}
+
+.dropDown{
+    display: flex;
+flex-direction: row;
+width: 10vw;
+height: 15vh;
+background-color: blue;
+border: 1px solid black;
+transition: 1s all ease;
+display: none;
+}
+
+li.filters {
+   
+    list-style: none;
+
+}
+
+div.filterList{
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    transition: all 1s ease;
+    margin-left: 4%;
+    
+}
+
+div.filterList h4{
+    cursor: pointer;
+    font-size: small;
+    display: inline;
+    z-index: 9;
+}
+
+
+.back{
+    position: absolute;
+    top: 15%;
+    width: 5%;
+    height: 2.5%;
+    background-color: black;
+    z-index: 100;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+li.list-group-item{
+    background-color: #0d6efd;
+}
+
+ul.pagination.justify-content-center{
+    padding: 0;
+}

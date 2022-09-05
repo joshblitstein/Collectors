@@ -1,3 +1,8 @@
+:root{
+  font-size: 16px;
+  
+}
+
 .App {
   text-align: center;
 }
@@ -33,6 +38,15 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg);   
   }
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+ html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+} 
